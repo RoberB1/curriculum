@@ -6,21 +6,157 @@
     <meta name="keywords" content="CV, Curriculum, Desarrollo, Programación">
     <meta name="description" content="Curriculum Vitae de [Tu Nombre]">
     <meta name="author" content="[Tu Nombre]">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
     <title>Curriculum Vitae - [Tu Nombre]</title>
+    
 </head>
 <body>
+
     <header>
-        <h1>Curriculum Vitae</h1>
+        <h1>Roberto Barrios</h1>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#Perfil">Perfil</a></li>
+            <li><a href="#Experiencia">Experiencia</a></li>
+            <li><a href="#Educacion">Educación</a></li>
+            <li><a href="#Habilidades">Habilidades</a></li>
+            <li><a href="#Intereses">Intereses</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
     <main>  
         <section id="Perfil">
-            <h2>Perfil</h2>
+            <h2 class="subtitle">Perfil</h2>
+            <img id="photo" src="https://placehold.co/200x200/000000/FFF" alt="Foto de perfil"
+            style="border-radius: 0%; display: block; margin-bottom: 1em;">
         </section>
+
         <section id="Experiencia">
-            <h2>Experiencia</h2>
+            <h2 class="subtitle">Experiencia</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ut odio dapibus tempus. Nam in nisl ullamcorper, euismod libero eu, aliquet sem. Integer magna felis, fermentum sit amet varius at, hendrerit a nibh.</p>
         </section>
 
+        <section id="Educacion">
+            <h2 class="subtitle">Educación</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ut odio dapibus tempus. Nam in nisl ullamcorper, euismod libero eu, aliquet sem. Integer magna felis, fermentum sit amet varius at, hendrerit a nibh.</p>
+        </section>
 
+        <section id="Habilidades">
+            <h2 class="subtitle">Habilidades y conocimientos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ut odio dapibus tempus. Nam in nisl ullamcorper, euismod libero eu, aliquet sem. Integer magna felis, fermentum sit amet varius at, hendrerit a nibh.</p>
+        </section>
+
+        <section id="Intereses">
+            <h2 class="subtitle">Intereses</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ut odio dapibus tempus. Nam in nisl ullamcorper, euismod libero eu, aliquet sem. Integer magna felis, fermentum sit amet varius at, hendrerit a nibh.</p>
+        </section>
+
+        <section style="background: var(--card); border: 1px solid var(--border); border-radius: 1rem; margin: 2rem 0; padding: 2rem 1.5rem; box-shadow: 0 2px 8px rgba(10,124,96,0.04); max-width: 700px; margin-left: auto; margin-right: auto;">
+            
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section id="Contacto">
+            <h2 class="subtitle">Contacto</h2>
+            <p>Escuela Superior Politécnica del Litoral, Guayaquil - Ecuador</p>
+            <form action="#" method="post" style="display: flex; flex-direction: column; gap: 1em; max-width: 600px;">
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="" disabled selected>Seleccione un motivo</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="trabajo">Oportunidad laboral</option>
+                    <option value="colaboracion">Colaboración</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <fieldset>
+                    <legend>¿Cómo prefieres ser contactado?</legend>
+                    <label><input type="radio" name="preferencia_contacto" value="email" required> Email</label>
+                    <label><input type="radio" name="preferencia_contacto" value="telefono" required> Teléfono</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Áreas de interés:</legend>
+                    <label><input type="checkbox" name="intereses" value="desarrollo" required> Desarrollo</label>
+                    <label><input type="checkbox" name="intereses" value="diseno" required> Diseño</label>
+                    <label><input type="checkbox" name="intereses" value="investigacion" required> Investigación</label>
+                    <label><input type="checkbox" name="intereses" value="docencia" required> Docencia</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Género:</legend>
+                    <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+                    <label><input type="radio" name="genero" value="femenino" required> Femenino</label>
+                    <label><input type="radio" name="genero" value="otro" required> Otro</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Lenguajes que conoces:</legend>
+                    <label><input type="checkbox" name="lenguajes" value="html" required> HTML</label>
+                    <label><input type="checkbox" name="lenguajes" value="css" required> CSS</label>
+                    <label><input type="checkbox" name="lenguajes" value="js" required> JavaScript</label>
+                </fieldset>
+
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.4968451739407!2d-79.9677281304547!3d-2.1479275999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1b7b6e3e9%3A0x1e7e8b6cbfbacfea!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1716138000000!5m2!1ses!2sec" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+        <section id="Referencias">
+            <h2 class="subtitle">Referencias</h2>
+            <article>
+                <blockquote>
+                    "Trabajar con [Tu Nombre] fue una experiencia enriquecedora, siempre mostró profesionalismo y dedicación en cada proyecto."
+                </blockquote>
+                <p>
+                    <strong>María López</strong><br>
+                    Gerente de Proyectos<br>
+                    María fue mi supervisora directa en el desarrollo de una plataforma educativa, donde colaboramos durante dos años logrando excelentes resultados.
+                </p>
+            </article>
+            <article>
+                <blockquote>
+                    "Destaco la capacidad de [Tu Nombre] para resolver problemas y su excelente comunicación en el equipo."
+                </blockquote>
+                <p>
+                    <strong>Carlos Pérez</strong><br>
+                    Líder Técnico<br>
+                    Carlos y yo trabajamos juntos en una startup tecnológica, donde su liderazgo y conocimientos técnicos fueron clave para el éxito del producto.
+                </p>
+            </article>
+            <article>
+                <blockquote>
+                    "Su creatividad y compromiso superaron nuestras expectativas en cada entrega."
+                </blockquote>
+                <p>
+                    <strong>Ana Torres</strong><br>
+                    Directora de Marketing<br>
+                    Ana fue mi cliente en varios proyectos de diseño web, destacando siempre mi responsabilidad y atención al detalle.
+                </p>
+            </article>
+        </section>
     </main>
+
 </body>
 </html>

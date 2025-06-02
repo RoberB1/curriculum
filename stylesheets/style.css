@@ -1,0 +1,185 @@
+:root {
+    --primary: #0a7c60;
+    --secondary: #ccddd9;
+    --accent: #f9b233;
+    --text: #222;
+    --background: #f5f7fa;
+    --card: #fff;
+    --border: #cedddd;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--primary);
+    color: #473d3d;
+    padding: 2rem 0 1rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(10,124,96,0.08);
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Tangerine", sans-serif;
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+nav {
+    background: var(--secondary);
+    box-shadow: 0 2px 8px rgba(10,124,96,0.05);
+    padding: 0.5rem 0;
+}
+
+nav > ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 900px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    margin: 2rem 0;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(10,124,96,0.04);
+}
+
+.subtitle, h2 {
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+#photo {
+    border-radius: 50%;
+    border: 4px solid var(--primary);
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin: 1rem auto 2rem auto;
+    box-shadow: 0 2px 8px rgba(10,124,96,0.10);
+}
+
+section > form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    background: var(--secondary);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 4px rgba(10,124,96,0.06);
+}
+
+section > form label,
+section > form legend {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+section > form input,
+section > form select,
+section > form textarea {
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    background: #fff;
+    color: var(--text);
+}
+
+section > form button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+section > form button:hover {
+    background: var(--primary);
+}
+
+#Referencias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+}
+
+#Referencias > h2 {
+    grid-column: 1 / 4;
+}
+
+#Referencias > article {
+    background: var(--secondary);
+    border-radius: 0.8rem;
+    padding: 1.2rem 1rem;
+    box-shadow: 0 1px 4px rgba(10,124,96,0.06);
+    border: 1px solid var(--border);
+}
+
+blockquote {
+    font-style: italic;
+    color: var(--primary);
+    margin: 0 0 1rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid var(--accent);
+    background: #f7faf9;
+}
+
+footer {
+    background: var(--primary);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-style: italic;
+}
