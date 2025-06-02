@@ -1,15 +1,15 @@
 :root {
     --primary: #0a7c60;
-    --secondary: #ccddd9;
+    --secondary: #e6f4f1;
     --accent: #f9b233;
-    --text: #222;
-    --background: #f5f7fa;
-    --card: #fff;
-    --border: #cedddd;
+    --text: #222831;
+    --background: #f7faf9;
+    --card: #ffffff;
+    --border: #b2dfdb;
 }
 
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 
 header {
     background: var(--primary);
-    color: #473d3d;
+    color: #ffffff;
     padding: 2rem 0 1rem 0;
     margin-bottom: 2rem;
     box-shadow: 0 2px 8px rgba(10,124,96,0.08);
@@ -182,4 +182,181 @@ footer {
 footer p {
     margin: 0;
     font-style: italic;
+}
+
+/* Sugerencia de estilos para la sección Perfil */
+.perfil-card {
+    background: var(--card, #fff);
+    border: 1px solid var(--border, #e0e0e0);
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(10,124,96,0.08);
+    margin: 2rem 0;          /* Usa solo margen vertical */
+    padding: 2rem 1.5rem;
+}
+
+.perfil-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row-reverse; /* Cambia la dirección para que la imagen quede a la derecha */
+    flex-wrap: wrap;
+}
+
+/* Opcional: para pantallas pequeñas, vuelve a poner la imagen arriba */
+@media (max-width: 700px) {
+    .perfil-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.perfil-img img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    border: 4px solid var(--border, #e0e0e0);
+}
+
+.perfil-info {
+    flex: 1;
+}
+
+.perfil-datos {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    font-size: 1em;
+}
+
+.perfil-datos li {
+    margin-bottom: 0.5em;
+    color: #444;
+}
+
+.experiencia-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1.5rem 0 0 0;
+}
+
+.experiencia-item {
+    background: var(--secondary);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(10,124,96,0.04);
+    padding: 1.5rem 1.2rem;
+    transition: box-shadow 0.2s;
+}
+
+.experiencia-item h3 {
+    margin-top: 0;
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.experiencia-item p {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.educacion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.educacion-item {
+    background: var(--secondary);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(10,124,96,0.04);
+    padding: 1.2rem 1rem;
+    position: relative;
+}
+
+.educacion-fecha {
+    display: block;
+    color: var(--primary);
+    font-size: 0.95em;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+.habilidades-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.habilidades-item {
+    background: var(--secondary);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(10,124,96,0.04);
+    padding: 1.2rem 1rem;
+    flex: 1 1 250px;
+    min-width: 220px;
+}
+
+.habilidades-item h3 {
+    margin-top: 0;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.habilidades-item ul {
+    padding-left: 1.2em;
+    margin: 0.5em 0 0 0;
+}
+
+.intereses-card {
+    background: var(--secondary);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(10,124,96,0.04);
+    padding: 1.5rem 1.2rem;
+    margin-top: 1.5rem;
+}
+
+#Contacto {
+    margin-top: 2.5rem;
+}
+
+#Contacto p {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#Contacto form {
+    margin: 2rem auto 0 auto; /* Agrega espacio arriba del formulario */
+    max-width: 600px;
+}
+
+section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    margin: 2rem 0;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(10,124,96,0.04);
+}
+
+/* Estilos para iframes de video y mapa */
+#Video iframe,
+#Contacto iframe {
+    display: block;
+    margin: 2rem auto;
+    max-width: 600px;
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(10,124,96,0.04);
 }

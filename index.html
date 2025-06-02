@@ -30,42 +30,116 @@
     </nav>
 
     <main>  
-        <section id="Perfil">
-            <h2 class="subtitle">Perfil</h2>
-            <img id="photo" src="https://placehold.co/200x200/000000/FFF" alt="Foto de perfil"
-            style="border-radius: 0%; display: block; margin-bottom: 1em;">
+        <section id="Perfil" class="perfil-card">
+            <div class="perfil-container">
+                <div class="perfil-img">
+                    <img id="photo" src="https://placehold.co/200x200/000000/FFF" alt="Foto de perfil">
+                </div>
+                <div class="perfil-info">
+                    <h2 class="subtitle">Perfil</h2>
+                    <p>
+                        Soy estudiante de Ingeniería en Computación en la Escuela Superior Politécnica del Litoral (ESPOL). Me apasiona el área de ciberseguridad y estoy en constante aprendizaje para desarrollar habilidades en análisis de vulnerabilidades, protección de sistemas y redes seguras.
+                    </p>
+                    <ul class="perfil-datos">
+                        <li><strong>Ubicación:</strong> Guayaquil, Ecuador</li>
+                        <li><strong>Email:</strong> roberto.barrios@email.com</li>
+                        <li><strong>LinkedIn:</strong> linkedin.com/in/robertobarrios</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="Experiencia">
             <h2 class="subtitle">Experiencia</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ut odio dapibus tempus. Nam in nisl ullamcorper, euismod libero eu, aliquet sem. Integer magna felis, fermentum sit amet varius at, hendrerit a nibh.</p>
+            <div class="experiencia-list">
+                <article class="experiencia-item">
+                    <h3>Desarrollador de proyectos académicos (POO y Estructura de Datos)</h3>
+                    <p>Diseñé programas utilizando Programación Orientada a Objetos, como un sistema de reserva de vuelos. También desarrollé juegos básicos aplicando estructuras de datos como listas, colas y pilas.</p>
+                    <p><strong>Tecnologías:</strong> Java, C++, estructuras de datos</p>
+                </article>
+                <article class="experiencia-item">
+                    <h3>Desarrollador de bases de datos (proyecto académico)</h3>
+                    <p>He trabajado con bases de datos relacionales usando MySQL, creando modelos, relaciones entre tablas, consultas y procedimientos almacenados como parte de prácticas universitarias.</p>
+                    <p><strong>Tecnologías:</strong> MySQL, SQL</p>
+                </article>
+                <article class="experiencia-item">
+                    <h3>Modelador 3D (proyecto personal)</h3>
+                    <p>Experiencia en modelado de objetos 3D usando herramientas como Blender. Desarrollo de modelos para uso en videojuegos o animaciones personales.</p>
+                    <p><strong>Herramientas:</strong> Blender, diseño 3D</p>
+                </article>
+                <article class="experiencia-item">
+                    <h3>Otros trabajos</h3>
+                    <p>He trabajado en restaurantes en áreas de atención al cliente, fortaleciendo habilidades de comunicación, resolución de problemas y trabajo bajo presión.</p>
+                </article>
+            </div>
         </section>
 
         <section id="Educacion">
             <h2 class="subtitle">Educación</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ut odio dapibus tempus. Nam in nisl ullamcorper, euismod libero eu, aliquet sem. Integer magna felis, fermentum sit amet varius at, hendrerit a nibh.</p>
+            <div class="educacion-list">
+                <article class="educacion-item">
+                    <h3>Escuela Superior Politécnica del Litoral (ESPOL)</h3>
+                    <p>Estudiante de Ingeniería en Computación</p>
+                    <span class="educacion-fecha">2022 - Presente</span>
+                </article>
+                <article class="educacion-item">
+                    <h3>Unidad Educativa Nueva Semilla</h3>
+                    <p>Bachiller en Ciencias</p>
+                    <span class="educacion-fecha">Graduado en 2022</span>
+                </article>
+            </div>
         </section>
 
         <section id="Habilidades">
             <h2 class="subtitle">Habilidades y conocimientos</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ut odio dapibus tempus. Nam in nisl ullamcorper, euismod libero eu, aliquet sem. Integer magna felis, fermentum sit amet varius at, hendrerit a nibh.</p>
+            <div class="habilidades-list">
+                <article class="habilidades-item">
+                    <h3>Habilidades Técnicas</h3>
+                    <ul>
+                        <li>Programación en Java, Python y HTML</li>
+                        <li>Manejo de bases de datos con MySQL</li>
+                        <li>Diseño 3D con Blender</li>
+                        <li>Diseño de interiores y modelado arquitectónico con SketchUp</li>
+                        <li>Diseño y prototipado de aplicaciones</li>
+                    </ul>
+                </article>
+                <article class="habilidades-item">
+                    <h3>Habilidades Creativas</h3>
+                    <ul>
+                        <li>Arte digital y dibujo a mano</li>
+                        <li>Creatividad y pensamiento visual aplicado al diseño</li>
+                        <li>Capacidad para conceptualizar ideas visuales en entornos digitales</li>
+                    </ul>
+                </article>
+                <article class="habilidades-item">
+                    <h3>Idiomas</h3>
+                    <ul>
+                        <li>Inglés: Nivel alto (lectura, escritura y conversación)</li>
+                        <li>Español: Nativo</li>
+                    </ul>
+                </article>
+            </div>
         </section>
 
         <section id="Intereses">
             <h2 class="subtitle">Intereses</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ut odio dapibus tempus. Nam in nisl ullamcorper, euismod libero eu, aliquet sem. Integer magna felis, fermentum sit amet varius at, hendrerit a nibh.</p>
+            <div class="intereses-card">
+                <p>
+                    Me interesa profundamente el campo de la ciberseguridad, especialmente en lo relacionado con la protección de sistemas, redes y análisis de vulnerabilidades.<br>
+                    También disfruto del diseño de aplicaciones web, donde puedo aplicar tanto mis conocimientos técnicos como mi creatividad visual.<br>
+                    En el ámbito artístico, me apasiona el arte digital, así como el diseño arquitectónico, donde puedo explorar el modelado 3D y la conceptualización de espacios.
+                </p>
+            </div>
         </section>
 
-        <section style="background: var(--card); border: 1px solid var(--border); border-radius: 1rem; margin: 2rem 0; padding: 2rem 1.5rem; box-shadow: 0 2px 8px rgba(10,124,96,0.04); max-width: 700px; margin-left: auto; margin-right: auto;">
-            
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
-        </section>
+        <section id="Video" style="background: var(--card); border: 1px solid var(--border); border-radius: 1rem; margin: 2rem 0; padding: 2rem 1.5rem; box-shadow: 0 2px 8px rgba(10,124,96,0.04);">
+            <h2 class="subtitle">Video</h2>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/lIzd7RlEncM" frameborder="0" allowfullscreen></iframe>        </section>
 
         <section id="Contacto">
             <h2 class="subtitle">Contacto</h2>
             <p>Escuela Superior Politécnica del Litoral, Guayaquil - Ecuador</p>
             <form action="#" method="post" style="display: flex; flex-direction: column; gap: 1em; max-width: 600px;">
-
                 <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -85,25 +159,10 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Áreas de interés:</legend>
-                    <label><input type="checkbox" name="intereses" value="desarrollo" required> Desarrollo</label>
-                    <label><input type="checkbox" name="intereses" value="diseno" required> Diseño</label>
-                    <label><input type="checkbox" name="intereses" value="investigacion" required> Investigación</label>
-                    <label><input type="checkbox" name="intereses" value="docencia" required> Docencia</label>
-                </fieldset>
-
-                <fieldset>
                     <legend>Género:</legend>
                     <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
                     <label><input type="radio" name="genero" value="femenino" required> Femenino</label>
                     <label><input type="radio" name="genero" value="otro" required> Otro</label>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Lenguajes que conoces:</legend>
-                    <label><input type="checkbox" name="lenguajes" value="html" required> HTML</label>
-                    <label><input type="checkbox" name="lenguajes" value="css" required> CSS</label>
-                    <label><input type="checkbox" name="lenguajes" value="js" required> JavaScript</label>
                 </fieldset>
 
                 <label for="comentarios">Comentarios adicionales:</label>
@@ -112,17 +171,14 @@
                 <button type="submit">Enviar</button>
             </form>
 
-
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.4968451739407!2d-79.9677281304547!3d-2.1479275999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1b7b6e3e9%3A0x1e7e8b6cbfbacfea!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1716138000000!5m2!1ses!2sec" 
-                width="100%" 
-                height="300" 
-                style="border:0;" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.4968451739407!2d-79.9677281304547!3d-2.1479275999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1b7b6e3e9%3A0x1e7e8b6cbfbacfea!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1716138000000!5m2!1ses!2sec"  
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </section>
+
         <section id="Referencias">
             <h2 class="subtitle">Referencias</h2>
             <article>
